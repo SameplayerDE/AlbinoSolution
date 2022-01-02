@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\AlbinoLibraryMonogame\AlbinoLibraryMonogame.csproj" />
+    <ProjectReference Include="..\AlbinoLibrary\AlbinoLibrary.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.0.1641" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Folder Include="Content" />
+    <Folder Include="Rendering" />
+  </ItemGroup>
+
+</Project>
